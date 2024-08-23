@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F3EBE4;
+}
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700; /* Peso 700 */
+}
+
+.container {
+    border-radius: 1em;
+    display: flex;
+    width: 40em;
+    overflow: hidden;
+}
+.image-container {
+    width: 50%;
+    background-color: white;
+    object-fit: fill;
+    line-height: 0;
+
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text-container {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 50%;
+    background-color:  white;
+    padding: 2em ;
+}
+.title {
+    font-family: 'Montserrat', sans;
+    color: #B8B8B8;
+    letter-spacing: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+.subtitle {
+    margin-bottom: 1em;
+    font-size: 2.1em;
+}
+.content {
+    color: #6E6E76;
+    line-height: 1.5em;
+    margin-bottom: 1em ;
+
+}
+.prices {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+
+}
+.price-current {
+    color: #3E846C;
+    font-size: 2em;
+    font-weight: 1000;
+    margin-right: 20px;
+}
+.price-original {
+    color: #6E6E76;
+    text-decoration: line-through;
+}
+.button-container {
+    background-color: #3E846C ;
+    padding: 1.20em 1em;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.4s;
+}
+.button {
+    text-decoration: none;
+    color: white;
+}
+.button-container i{
+    margin-right: 1em;
+}
+.button-container:hover {
+    background-color: #06271b;
+}
+
+@media (max-width: 760px ) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 1em;
+    }
+    .image-container {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+        height: 30em;
+    }
+    .text-container {
+        width: 100%; /* Asegura que el texto ocupe todo el ancho */
+        padding: 1.5em; /* Ajusta el padding si es necesario */
+        
+    }
+}
